@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D0D0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/svPalabra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="search.." />
+
+    <GridView
+        android:id="@+id/Grd"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:background="#909293">
+
+    </GridView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mostrarVentanaAgregarElemento"
+                android:text="Agregar" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviarCorreo"
+                android:text="Enviar por correo" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="importar"
+                android:text="Importar Diccionario" />
+
+            <Button
+                android:id="@+id/btnExportar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="exportarElementosCSV"
+                android:text="Exportar diccionario" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Acercade"
+                android:text="acerca de..." />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
